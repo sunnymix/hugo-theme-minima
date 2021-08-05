@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
-  const light = '🌝', dark = '🌚';
+  const light = 'Light', dark = 'Dark';
   const LIGHT = 'light', DARK = 'dark';
   const themeSwitcher = document.getElementById('theme-switcher');
 
