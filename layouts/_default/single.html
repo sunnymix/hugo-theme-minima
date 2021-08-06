@@ -5,7 +5,10 @@
 <main>
 	<h1>{{ .Title }}</h1>
 	<div class="sm-1 mtb-1">
-		Posted at &mdash; {{ dateFormat "Jan 2, 2006" .Date }}
+		{{ if .Params.Author }}
+		{{ .Params.Author }}
+		{{ end }}
+		Posted at &mdash; {{ dateFormat "2006/01/02" .Date }}
 		{{ if .Draft }}
 		<span class="tag ml-1">
 			DRAFT

@@ -3,7 +3,7 @@
   --bd: #e1e1e1;
   --bg: #fff;
   --ft: #222;
-  --tag: #333;
+  --tag: #999;
 
   --w-mobile: 640px;
 }
@@ -50,6 +50,12 @@ hr {
   border-top: 1px solid var(--bd);
 }
 
+pre {
+  background-color: #fafafa;
+  padding: 10px;
+  border: 1px solid rgba(208,212,217,0.5);
+}
+
 pre,
 code {
   word-wrap: break-word;
@@ -65,15 +71,14 @@ a {
 
 a:not(.icon) {
   color: inherit;
-  text-decoration: underline;
-  text-decoration-color: var(--pm);
+  /*text-decoration: underline;*/
+  /*text-decoration-color: var(--pm);*/
   background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 50%, var(--pm) 50% );
   background-size: 100% 200%;
   /*transition: background-position .2s ease-in-out;*/
 }
 
-a:not(.icon):hover,
-a:not(.icon):focus {
+a:not(.icon):hover {
   background-position: 0 100%;
   color: #fff;
 }
@@ -239,21 +244,4 @@ details.toc ul>li {
   .mb-1_5-mob {
     margin-bottom: 1.5em;
   }
-}
-
-/* Scroll bar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(128 128 128 / 70%);
-}
-::-webkit-scrollbar-thumb:window-inactive {
-  background: rgb(128 128 128 / 20%);
-}
-
-::-webkit-scrollbar-thumb:active {
-  background-color: rgb(128 128 128 / 100%);
 }
