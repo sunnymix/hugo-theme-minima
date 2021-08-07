@@ -8,7 +8,7 @@
 		{{ if .Params.Author }}
 		{{ .Params.Author }}
 		{{ end }}
-		Posted at &mdash; {{ dateFormat "2006/01/02" .Date }}
+		Posted at &mdash; {{ dateFormat .Site.Params.dateform .Date }}
 		{{ if .Draft }}
 		<span class="tag ml-1">
 			DRAFT
